@@ -6,6 +6,7 @@ target ‘Likes’ do
     pod 'RealmSwift'
     pod ‘RxSwift’
     pod 'SVProgressHUD'
+    pod 'TwitterKit'
 end
 
 post_install do |installer|
