@@ -3,7 +3,7 @@
 use_frameworks!
 
 target ‘Likes’ do
-    pod 'RealmSwift'
+    #pod 'RealmSwift'
     pod ‘RxSwift’
     pod 'SVProgressHUD'
     pod 'TwitterKit'
@@ -15,7 +15,7 @@ post_install do |installer|
         
     installer.pods_project.targets.each do |target|
         target.build_configurations.each do |config|
-            config.build_settings['SWIFT_VERSION'] = "3.0"
+            config.build_settings['SWIFT_VERSION'] = "4.0"
             #target.build_configuration_list.set_setting('HEADER_SEARCH_PATHS', '')
         end
     end

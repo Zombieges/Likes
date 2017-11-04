@@ -13,6 +13,10 @@
 		BB0F24C21FA7745D00536605 /* Likes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB0F24C01FA7745D00536605 /* Likes.xcdatamodeld */; };
 		BB0F24C41FA7745D00536605 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB0F24C31FA7745D00536605 /* Assets.xcassets */; };
 		BB0F24C71FA7745D00536605 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB0F24C51FA7745D00536605 /* LaunchScreen.storyboard */; };
+		BB31F2E21FACA5A500A0B7DE /* Twitter.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB31F2E11FACA5A500A0B7DE /* Twitter.plist */; };
+		BB31F2E51FACA82600A0B7DE /* TwitterSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB31F2E41FACA82600A0B7DE /* TwitterSettings.swift */; };
+		BB31F2E81FACC42C00A0B7DE /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB31F2E71FACC42C00A0B7DE /* Account.storyboard */; };
+		BB31F2EB1FACC6D800A0B7DE /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB31F2EA1FACC6D800A0B7DE /* AccountViewController.swift */; };
 		FAC96CEF2E890E04BE536217 /* Pods_Likes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 080A7B836E976CC457621850 /* Pods_Likes.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +31,10 @@
 		BB0F24C31FA7745D00536605 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB0F24C61FA7745D00536605 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB0F24C81FA7745D00536605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB31F2E11FACA5A500A0B7DE /* Twitter.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Twitter.plist; sourceTree = "<group>"; };
+		BB31F2E41FACA82600A0B7DE /* TwitterSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterSettings.swift; sourceTree = "<group>"; };
+		BB31F2E71FACC42C00A0B7DE /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
+		BB31F2EA1FACC6D800A0B7DE /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		E77F7B582258E4712747E926 /* Pods-Likes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Likes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Likes/Pods-Likes.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +71,9 @@
 		BB0F24B81FA7745C00536605 /* Likes */ = {
 			isa = PBXGroup;
 			children = (
+				BB31F2E91FACC68F00A0B7DE /* Controllers */,
+				BB31F2E61FACC41800A0B7DE /* View */,
+				BB31F2E31FACA80E00A0B7DE /* Model */,
 				BB0F24B91FA7745C00536605 /* AppDelegate.swift */,
 				BB0F24BB1FA7745C00536605 /* ViewController.swift */,
 				BB0F24BD1FA7745D00536605 /* Main.storyboard */,
@@ -70,8 +81,33 @@
 				BB0F24C51FA7745D00536605 /* LaunchScreen.storyboard */,
 				BB0F24C81FA7745D00536605 /* Info.plist */,
 				BB0F24C01FA7745D00536605 /* Likes.xcdatamodeld */,
+				BB31F2E11FACA5A500A0B7DE /* Twitter.plist */,
 			);
 			path = Likes;
+			sourceTree = "<group>";
+		};
+		BB31F2E31FACA80E00A0B7DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB31F2E41FACA82600A0B7DE /* TwitterSettings.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BB31F2E61FACC41800A0B7DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB31F2E71FACC42C00A0B7DE /* Account.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BB31F2E91FACC68F00A0B7DE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BB31F2EA1FACC6D800A0B7DE /* AccountViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		C7C793B9281C3FFC4D447D8B /* Frameworks */ = {
@@ -155,6 +191,8 @@
 			files = (
 				BB0F24C71FA7745D00536605 /* LaunchScreen.storyboard in Resources */,
 				BB0F24C41FA7745D00536605 /* Assets.xcassets in Resources */,
+				BB31F2E81FACC42C00A0B7DE /* Account.storyboard in Resources */,
+				BB31F2E21FACA5A500A0B7DE /* Twitter.plist in Resources */,
 				BB0F24BF1FA7745D00536605 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,6 +252,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB31F2E51FACA82600A0B7DE /* TwitterSettings.swift in Sources */,
+				BB31F2EB1FACC6D800A0B7DE /* AccountViewController.swift in Sources */,
 				BB0F24BC1FA7745C00536605 /* ViewController.swift in Sources */,
 				BB0F24C21FA7745D00536605 /* Likes.xcdatamodeld in Sources */,
 				BB0F24BA1FA7745C00536605 /* AppDelegate.swift in Sources */,
@@ -358,6 +398,7 @@
 				DEVELOPMENT_TEAM = HK27Y6U39D;
 				INFOPLIST_FILE = Likes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = zombieges.Likes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -374,6 +415,7 @@
 				DEVELOPMENT_TEAM = HK27Y6U39D;
 				INFOPLIST_FILE = Likes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = zombieges.Likes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
