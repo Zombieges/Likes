@@ -13,7 +13,9 @@ public enum Storyboard: String {
     
     public func instantiate<VC: UIViewController>(_ viewController: VC.Type) -> VC {
         guard let vc = UIStoryboard(name: self.rawValue, bundle: nil)
-                .instantiateViewController(withIdentifier: VC.storyboardIdentifier) as? VC else { return }
+                .instantiateViewController(withIdentifier: VC.storyboardIdentifier) as? VC else {
+                    fatalError("Couldn't instantiate")
+        }
         
         return vc
     }
