@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import TwitterKit
+import RxSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

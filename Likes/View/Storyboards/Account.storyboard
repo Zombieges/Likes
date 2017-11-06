@@ -38,10 +38,10 @@
             </objects>
             <point key="canvasLocation" x="-4938" y="25"/>
         </scene>
-        <!--View Controller-->
+        <!--Account View Controller-->
         <scene sceneID="Cbh-2g-Zzd">
             <objects>
-                <viewController id="H9y-QC-g7r" sceneMemberID="viewController">
+                <viewController id="H9y-QC-g7r" customClass="AccountViewController" customModule="Likes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RZg-Pd-oTN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

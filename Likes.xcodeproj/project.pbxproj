@@ -17,6 +17,8 @@
 		BB31F2E51FACA82600A0B7DE /* TwitterSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB31F2E41FACA82600A0B7DE /* TwitterSettings.swift */; };
 		BB31F2E81FACC42C00A0B7DE /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB31F2E71FACC42C00A0B7DE /* Account.storyboard */; };
 		BB31F2EB1FACC6D800A0B7DE /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB31F2EA1FACC6D800A0B7DE /* AccountViewController.swift */; };
+		BB31F2EE1FB0130900A0B7DE /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB31F2ED1FB0130900A0B7DE /* Storyboard.swift */; };
+		BB31F2F11FB09E4200A0B7DE /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB31F2F01FB09E4200A0B7DE /* UIViewController+Extension.swift */; };
 		FAC96CEF2E890E04BE536217 /* Pods_Likes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 080A7B836E976CC457621850 /* Pods_Likes.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		BB31F2E41FACA82600A0B7DE /* TwitterSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterSettings.swift; sourceTree = "<group>"; };
 		BB31F2E71FACC42C00A0B7DE /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		BB31F2EA1FACC6D800A0B7DE /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		BB31F2ED1FB0130900A0B7DE /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		BB31F2F01FB09E4200A0B7DE /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		E77F7B582258E4712747E926 /* Pods-Likes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Likes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Likes/Pods-Likes.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +75,7 @@
 		BB0F24B81FA7745C00536605 /* Likes */ = {
 			isa = PBXGroup;
 			children = (
+				BB31F2EC1FB012EA00A0B7DE /* Library */,
 				BB31F2E91FACC68F00A0B7DE /* Controllers */,
 				BB31F2E61FACC41800A0B7DE /* View */,
 				BB31F2E31FACA80E00A0B7DE /* Model */,
@@ -97,7 +102,7 @@
 		BB31F2E61FACC41800A0B7DE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BB31F2E71FACC42C00A0B7DE /* Account.storyboard */,
+				BB31F2EF1FB0149F00A0B7DE /* Storyboards */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -108,6 +113,31 @@
 				BB31F2EA1FACC6D800A0B7DE /* AccountViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BB31F2EC1FB012EA00A0B7DE /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				BB31F2F21FB0A83500A0B7DE /* Extensions */,
+				BB31F2ED1FB0130900A0B7DE /* Storyboard.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		BB31F2EF1FB0149F00A0B7DE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BB31F2E71FACC42C00A0B7DE /* Account.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		BB31F2F21FB0A83500A0B7DE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB31F2F01FB09E4200A0B7DE /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		C7C793B9281C3FFC4D447D8B /* Frameworks */ = {
@@ -256,6 +286,8 @@
 				BB31F2EB1FACC6D800A0B7DE /* AccountViewController.swift in Sources */,
 				BB0F24BC1FA7745C00536605 /* ViewController.swift in Sources */,
 				BB0F24C21FA7745D00536605 /* Likes.xcdatamodeld in Sources */,
+				BB31F2F11FB09E4200A0B7DE /* UIViewController+Extension.swift in Sources */,
+				BB31F2EE1FB0130900A0B7DE /* Storyboard.swift in Sources */,
 				BB0F24BA1FA7745C00536605 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
