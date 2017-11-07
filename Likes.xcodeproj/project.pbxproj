@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BB0F24BA1FA7745C00536605 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F24B91FA7745C00536605 /* AppDelegate.swift */; };
-		BB0F24BC1FA7745C00536605 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F24BB1FA7745C00536605 /* ViewController.swift */; };
+		BB0F24BC1FA7745C00536605 /* LikesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F24BB1FA7745C00536605 /* LikesListViewController.swift */; };
 		BB0F24BF1FA7745D00536605 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB0F24BD1FA7745D00536605 /* Main.storyboard */; };
 		BB0F24C21FA7745D00536605 /* Likes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB0F24C01FA7745D00536605 /* Likes.xcdatamodeld */; };
 		BB0F24C41FA7745D00536605 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB0F24C31FA7745D00536605 /* Assets.xcassets */; };
@@ -19,6 +19,9 @@
 		BB31F2EB1FACC6D800A0B7DE /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB31F2EA1FACC6D800A0B7DE /* AccountViewController.swift */; };
 		BB31F2EE1FB0130900A0B7DE /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB31F2ED1FB0130900A0B7DE /* Storyboard.swift */; };
 		BB31F2F11FB09E4200A0B7DE /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB31F2F01FB09E4200A0B7DE /* UIViewController+Extension.swift */; };
+		BB31F2F71FB2630D00A0B7DE /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB31F2F61FB2630D00A0B7DE /* AccountViewModel.swift */; };
+		BB31F2F91FB2667800A0B7DE /* LikesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB31F2F81FB2667800A0B7DE /* LikesListViewModel.swift */; };
+		BB31F2FB1FB266B200A0B7DE /* LikesListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB31F2FA1FB266B200A0B7DE /* LikesListModel.swift */; };
 		FAC96CEF2E890E04BE536217 /* Pods_Likes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 080A7B836E976CC457621850 /* Pods_Likes.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +30,7 @@
 		509939617392B62FED1AE302 /* Pods-Likes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Likes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Likes/Pods-Likes.debug.xcconfig"; sourceTree = "<group>"; };
 		BB0F24B61FA7745C00536605 /* Likes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Likes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB0F24B91FA7745C00536605 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BB0F24BB1FA7745C00536605 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB0F24BB1FA7745C00536605 /* LikesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesListViewController.swift; sourceTree = "<group>"; };
 		BB0F24BE1FA7745D00536605 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB0F24C11FA7745D00536605 /* Likes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Likes.xcdatamodel; sourceTree = "<group>"; };
 		BB0F24C31FA7745D00536605 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +42,9 @@
 		BB31F2EA1FACC6D800A0B7DE /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		BB31F2ED1FB0130900A0B7DE /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		BB31F2F01FB09E4200A0B7DE /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		BB31F2F61FB2630D00A0B7DE /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		BB31F2F81FB2667800A0B7DE /* LikesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesListViewModel.swift; sourceTree = "<group>"; };
+		BB31F2FA1FB266B200A0B7DE /* LikesListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesListModel.swift; sourceTree = "<group>"; };
 		E77F7B582258E4712747E926 /* Pods-Likes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Likes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Likes/Pods-Likes.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,13 +86,10 @@
 				BB31F2E61FACC41800A0B7DE /* Views */,
 				BB31F2E31FACA80E00A0B7DE /* Models */,
 				BB0F24B91FA7745C00536605 /* AppDelegate.swift */,
-				BB0F24BB1FA7745C00536605 /* ViewController.swift */,
-				BB0F24BD1FA7745D00536605 /* Main.storyboard */,
 				BB0F24C31FA7745D00536605 /* Assets.xcassets */,
-				BB0F24C51FA7745D00536605 /* LaunchScreen.storyboard */,
 				BB0F24C81FA7745D00536605 /* Info.plist */,
-				BB0F24C01FA7745D00536605 /* Likes.xcdatamodeld */,
 				BB31F2E11FACA5A500A0B7DE /* Twitter.plist */,
+				BB0F24C01FA7745D00536605 /* Likes.xcdatamodeld */,
 			);
 			path = Likes;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				BB31F2E41FACA82600A0B7DE /* TwitterSettings.swift */,
+				BB31F2FA1FB266B200A0B7DE /* LikesListModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -111,6 +115,8 @@
 		BB31F2E91FACC68F00A0B7DE /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				BB31F2F61FB2630D00A0B7DE /* AccountViewModel.swift */,
+				BB31F2F81FB2667800A0B7DE /* LikesListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -127,6 +133,8 @@
 		BB31F2EF1FB0149F00A0B7DE /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				BB0F24C51FA7745D00536605 /* LaunchScreen.storyboard */,
+				BB0F24BD1FA7745D00536605 /* Main.storyboard */,
 				BB31F2E71FACC42C00A0B7DE /* Account.storyboard */,
 			);
 			path = Storyboards;
@@ -143,6 +151,7 @@
 		BB31F2F51FB0BA7D00A0B7DE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BB0F24BB1FA7745C00536605 /* LikesListViewController.swift */,
 				BB31F2EA1FACC6D800A0B7DE /* AccountViewController.swift */,
 			);
 			path = Controllers;
@@ -290,10 +299,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB31F2FB1FB266B200A0B7DE /* LikesListModel.swift in Sources */,
 				BB31F2E51FACA82600A0B7DE /* TwitterSettings.swift in Sources */,
 				BB31F2EB1FACC6D800A0B7DE /* AccountViewController.swift in Sources */,
-				BB0F24BC1FA7745C00536605 /* ViewController.swift in Sources */,
+				BB31F2F71FB2630D00A0B7DE /* AccountViewModel.swift in Sources */,
+				BB0F24BC1FA7745C00536605 /* LikesListViewController.swift in Sources */,
 				BB0F24C21FA7745D00536605 /* Likes.xcdatamodeld in Sources */,
+				BB31F2F91FB2667800A0B7DE /* LikesListViewModel.swift in Sources */,
 				BB31F2F11FB09E4200A0B7DE /* UIViewController+Extension.swift in Sources */,
 				BB31F2EE1FB0130900A0B7DE /* Storyboard.swift in Sources */,
 				BB0F24BA1FA7745C00536605 /* AppDelegate.swift in Sources */,
