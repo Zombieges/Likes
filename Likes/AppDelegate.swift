@@ -25,9 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             consumerSecret: TwitterSettingsContainer.settings.consumerSecret
         )
         
-        let storyboard = UIStoryboard(name: "Account", bundle: nil)
-        let vc = storyboard.instantiateInitialViewController()
-        self.window?.rootViewController = vc
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storyboard.instantiateInitialViewController()
+//        self.window?.rootViewController = vc
         
         return true
     }
