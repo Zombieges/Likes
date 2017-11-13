@@ -16,8 +16,12 @@ struct LikesListModel: Codable {
         self.test1 = test1
         self.test2 = test2
     }
-    static var dummyData: LikesListModel {
-        return LikesListModel(1.0, 2.0)
+    static var dummyData: [LikesListModel] {
+        return [
+            LikesListModel(1.0, 2.0),
+            LikesListModel(2.0, 3.0),
+            LikesListModel(4.0, 5.0)
+        ]
     }
 }
 
