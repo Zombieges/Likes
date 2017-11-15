@@ -24,7 +24,7 @@ class LikesListViewController: UIViewController {
         viewModel = LikesListViewModel()
         viewModel.items
             .bind(to: tableView.rx.items(cellIdentifier: "cell", cellType: UITableViewCell.self)) { (row, element, cell) in
-                cell.textLabel?.text = "\(element.test1) @ row \(row)"
+                //cell.textLabel?.text = "\(element.test1) @ row \(row)"
             }
             .disposed(by: disposeBag)
         
