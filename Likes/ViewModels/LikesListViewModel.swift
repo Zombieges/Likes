@@ -12,10 +12,9 @@ import RxCocoa
 import RxDataSources
 
 struct LikesListViewModel {
-    //public let dataSource: RxTableViewSectionedReloadDataSource<SectionModel<String, LikesListModel>>
-    //public var items: Observable<SectionModel<String, LikesListModel>> = Observable.empty()
-    public var items: Observable<[LikesListModel]> {
-        return Observable.of(LikesListModel.dummyData)
+    var items: Observable<[LikesListModel]>
+    
+    init() {
+        items = SearchAPIClient.search()
     }
-
 }

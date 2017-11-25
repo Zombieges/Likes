@@ -25,11 +25,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             consumerSecret: TwitterSettingsContainer.settings.consumerSecret
         )
         
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let vc = storyboard.instantiateInitialViewController()
-//        self.window?.rootViewController = vc
+        addAccount()
         
         return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        return Twitter.sharedInstance().application(app, open: url, options: options)
+    }
+}
+
+extension AppDelegate {
+    func addAccount() {
+        Twitter.sharedInstance().logIn(completion: { (session, error) in
+            if let sess = session {
+                print("signed in as \(sess.userName)");
+            } else {
+                //Twitter をインストールしていない場合
+                print("error: \(String(describing: error?.localizedDescription))");
+            }
+        })
     }
     
     func loadTwitterSettings() throws {
@@ -41,21 +56,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let decoder = PropertyListDecoder()
         TwitterSettingsContainer.settings = try decoder.decode(TwitterSettings.self, from: data)
     }
-
-    func applicationWillResignActive(_ application: UIApplication) {
-    }
-
-    func applicationDidEnterBackground(_ application: UIApplication) {
-    }
-
-    func applicationWillEnterForeground(_ application: UIApplication) {
-    }
-
-    func applicationDidBecomeActive(_ application: UIApplication) {
-    }
-
-    func applicationWillTerminate(_ application: UIApplication) {
-    }
-    
 }
 

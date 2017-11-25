@@ -1,4 +1,11 @@
 PODS:
+  - Differentiator (3.0.2)
+  - RxCocoa (4.0.0):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.0.2):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
   - RxSwift (4.0.0)
   - SVProgressHUD (2.2.2)
   - TwitterCore (3.0.2)
@@ -6,16 +13,21 @@ PODS:
     - TwitterCore (>= 3.0.2)
 
 DEPENDENCIES:
+  - RxCocoa
+  - RxDataSources
   - RxSwift
   - SVProgressHUD
   - TwitterKit
 
 SPEC CHECKSUMS:
+  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
+  RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
+  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
   SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
   TwitterCore: e0420b01e02e7d20e94690e37f43e75de219ab8d
   TwitterKit: 205ac89824bbfe9e85a16c420d30bb7bcbedac45
 
-PODFILE CHECKSUM: a88c2353d182584622dd9fe8df43b71d90614c62
+PODFILE CHECKSUM: 9ff808b7db474c4c1b125cc92b6aff10220689ad
 
 COCOAPODS: 1.2.1

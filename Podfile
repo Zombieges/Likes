@@ -4,7 +4,9 @@ use_frameworks!
 
 target ‘Likes’ do
     #pod 'RealmSwift'
-    pod ‘RxSwift’
+    pod 'RxSwift'
+    pod 'RxCocoa'
+    pod 'RxDataSources'
     pod 'SVProgressHUD'
     pod 'TwitterKit'
 end
