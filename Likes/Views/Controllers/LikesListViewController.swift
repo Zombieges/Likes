@@ -31,30 +31,6 @@ class LikesListViewController: UIViewController {
         tableView.rx
             .setDelegate(self)
             .disposed(by: disposeBag)
-        
-//        let dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String, LikesListModel>>(
-//            configureCell: { (dataSource, table, indexPath, element) in
-//                let cell = table.dequeueReusableCell(withIdentifier: "cell")!
-//                cell.textLabel?.text = "\(element.test1) @ row \(indexPath.row)"
-//                return cell
-//            }
-//        )
-//        dataSource.titleForHeaderInSection = { dataSource, sectionIndex in
-//            return dataSource[sectionIndex].model
-//        }
-//        viewModel.items
-//            .bind(to: tableView.rx.items(dataSource: viewModel.dataSource))
-//            .disposed(by: disposeBag)
-        
-//        tableView.rx
-//            .itemSelected
-//            .map { indexPath in
-//                return (indexPath, self.viewModel.dataSource[indexPath])
-//            }
-//            .subscribe(onNext: { indexPath, model in
-//
-//            })
-//            .disposed(by: disposeBag)
     }
 }
 
